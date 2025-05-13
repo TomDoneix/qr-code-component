@@ -1,0 +1,63 @@
+@import url(./new-css-reset.css);
+@font-face {
+  font-family: Outfit;
+  src: url(../font/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+  --slate-900: #1f314f;
+  --slate-500: #68778d;
+  --slate-300: #d5e1ef;
+  --blue-600: #2c7dfa;
+  --blue-500: #3685ff;
+  --white: #ffffff;
+
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+
+  --text-preset-1: 22px;
+  --text-preset-2: 15px;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--slate-300);
+  font-family: Outfit, Arial, Helvetica, sans-serif;
+}
+
+main {
+  max-width: 320px;
+  min-height: 499px;
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-500);
+  background: var(--white);
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+img {
+  height: auto;
+  margin-bottom: var(--spacing-300);
+  border-radius: 10px;
+}
+
+h1,
+p {
+  padding: 0 var(--spacing-200);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: var(--text-preset-1);
+  color: var(--slate-900);
+  margin-bottom: var(--spacing-200);
+}
+
+p {
+  font-weight: 400;
+  font-size: var(--text-preset-2);
+  color: var(--slate-500);
+}
